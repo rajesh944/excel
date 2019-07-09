@@ -20,7 +20,7 @@
         };
         
         wb.SheetNames.push("Test Sheet");
-        var ws_data = [['hello' , 'world']];
+        var ws_data = [['FirstName' , 'LastName'],['Rajesh' , 'Surapaneni'],['Swathi' , 'Dasari']];
         var ws = XLSX.utils.aoa_to_sheet(ws_data);
         wb.Sheets["Test Sheet"] = ws;
         var wbout = XLSX.write(wb, {bookType:'xlsx',  type: 'binary'});
